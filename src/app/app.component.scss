@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.charts-container {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  & > div {
+    display: grid;
+    grid-template-columns: repeat(3, 315px);
+    grid-template-rows: max-content;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    & > div {
+      display: grid;
+      grid-template-rows: 20px 1fr;
+      height: 230px;
+
+      & > div {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.tick-rotation-select {
+   margin-right: 4em;
+}
+
+.input-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+label {
+  margin-right: 0.25em;
+}
